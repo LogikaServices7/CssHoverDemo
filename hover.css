@@ -1,0 +1,311 @@
+body{
+	background-image: url(img/brown.jpg);
+	background-size: 75%;
+
+}
+
+h1{
+	/**background-color: rgba(187,141,36,0.8);**/
+	background-color: #333;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: #f2c16d;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 7px blue;
+	font-size: 85px;
+	border-radius: 20px;
+
+
+
+
+}
+.audio{
+	position: relative;
+	left: 39%;
+
+}
+
+/**In general used for all**/
+.element{
+	float:left;
+	width: 400px;
+	height: 400px;
+	/**background-color: #333;**/
+	color: #fff;
+	position: relative;
+	border: 20px solid transparent;
+}
+
+/**Effect 1 Salmon**/
+.front , .back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transition: all 0.5s ease;
+}
+
+.front{
+	transform: rotateY(0deg);
+}
+
+.back{
+	transform: rotateY(180deg);
+	background-color: #ff9999;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 7px #333;
+
+}
+
+.element:hover .front{
+	transform: rotateY(180deg);
+}
+.element:hover .back {
+	transform: rotateY(0deg);
+}
+
+.element .front img {
+	width: 100%;
+	height:100%;
+
+}
+
+/**Effect 2 Outback**/
+
+.front1 , .back1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transition: all 0.5s ease;
+}
+
+.front1{
+	transform: rotateX(0deg);
+}
+
+.back1{
+	transform: rotateY(180deg);
+	background-color: #f45642;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 7px #333;
+
+}
+
+.element:hover .front1{
+	transform: rotateX(180deg);
+}
+.element:hover .back1 {
+	transform: rotateY(0deg);
+}
+
+.element .front1 img {
+	width: 100%;
+	height:100%;
+
+}
+
+/**Effect 3 (Pizza)**/
+
+.front2 , .back2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transition: all 0.5s ease;
+}
+
+.front2 img{
+	width: 100%;
+	height: 100%;
+}
+
+.back2{
+	
+	/**background-image: img/Pizza.jpg;**/
+	color: #fff;
+	text-align: center;
+	top: -100%;
+	transition: all 0.5s ease;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 7px #333;
+
+}
+
+.effect3{
+	overflow: hidden;
+	transition:all 0.5s ease;
+
+}
+
+.effect3:hover .back2{
+	top: 0;
+
+}
+
+.effect3:hover{
+	transform: scale(0.7);
+	border-radius: 50%;
+	border: 20px solid #f2c16d;
+}
+
+.effect3:hover .back-content{
+	transform: scale(1.0);
+	padding-top: 15%;
+}
+
+/**Effect 4 CC**/
+
+.front4 , .back4{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s ease;
+}
+
+.front4{
+	z-index: 2;
+	transform-origin: top;
+}
+
+.front4 img{
+	width: 100%;
+	height: 100%;
+}
+
+.back4{
+	
+	background-color: #ebf97a;
+	color: black;
+	text-align: center;
+	transition: all 0.5s ease;
+	z-index: 1;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 7px green;
+}
+
+
+.effect4{
+	overflow: hidden;
+	transition:all 0.5s ease;
+
+}
+
+.effect4:hover .front4{
+	transform: rotateX(90deg);
+	
+}
+
+/**Effect 5 LMNOP**/
+.front5 , .back5{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.9s ease-in-out;
+}
+
+
+.back5{
+    transform: rotateY(90deg);
+	transform-origin: top;
+}
+
+.effect5:hover .back5{
+
+	transform: rotateY(0deg);
+}
+
+.element .front5 .back5, img{
+	width: 100%;
+	height: 100%;
+
+}
+
+/***Effect 6 wife***/
+.front6 , .back6{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.9s ease-in-out;
+}
+
+
+
+.front6 img{
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s ease-in-out;
+}
+
+.back6{
+	background-color: rgba(187,141,36,0.4);
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 7px red;
+	transform: scale(0);
+    
+}
+
+.front6:before{
+	position: absolute;
+	content: '';
+	width: 220%;
+	height: 70%;
+	background-color: rgba(187,141,36,0.8);
+	/*** can use rgb for "solid effect"
+	background-color: rgb (187,141,36);
+	***/
+	top: -40%;
+	right: -140%;
+	transform: rotate(40deg);
+	transition: all 0.5s ease;
+	z-index: 2;
+}
+
+.effect6{
+	overflow: hidden;
+}
+
+.effect6:hover .front6:before{
+	top: 120%;
+	right:120%;
+}
+
+.effect6:hover .back6{
+	transform: scale(1);
+}
+
+.effect6:hover .front6 img{
+	transform: scale(1.3)rotate(5deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
